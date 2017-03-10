@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.praveenkn.cloudmanagementclient.ServerMetaActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_heading"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:text="Server Details:"/>
+<TableLayout
+    android:layout_marginTop="3dp"
+    android:layout_below="@id/main_heading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp">
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Name:"
+            android:textSize="20dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/table_name_value"
+            android:text="Value"
+            android:ellipsize="marquee"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Created On:"
+            android:textSize="20dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/table_createdOn_value"
+            android:text="Value"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ID:"
+            android:textSize="20dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/table_id_value"
+            android:padding="5dp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:maxLines="3"
+            android:textStyle="bold"
+            android:text="Value"
+            android:textSize="20dp"/>
+
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Instance Name:"
+            android:textSize="20dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/table_instancename_value"
+            android:text="Value"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textSize="20dp"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Availability Zone:"
+            android:textSize="20dp"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/table_availabilityzone_value"
+            android:text="Value"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+    </TableRow>
+</TableLayout>
+</RelativeLayout>
