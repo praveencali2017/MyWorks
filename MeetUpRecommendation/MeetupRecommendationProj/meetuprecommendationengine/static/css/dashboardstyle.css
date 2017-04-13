@@ -1,0 +1,44 @@
+#headerview{
+
+ background-color: powderblue;
+ width: 100%;
+ height: 30%;
+ margin:0;
+ padding:5px;
+}
+#resultview{
+
+ width: 100%;
+ height: 70%;
+
+}
+body{
+    margin:0;
+    padding:0;
+    background:#F0F0F0;
+    }
+.circular-img{
+position: relative;
+    left: 40px;
+border-radius:  50%;
+width:150px;
+height:150px;
+}
+#searchtxt{
+width:400px;
+height:20px;
+position: relative;
+top:-60px;
+left: 200px;
+background-color: #ffffff;
+padding: 10px;
+}
+#searchbtn{
+font-size: 100%;
+position: relative;
+top:-60px;
+left: 300px;
+padding:5px;
+width:auto;
+height:auto;
+}
