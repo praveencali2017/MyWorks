@@ -5,18 +5,38 @@
     <title>NLP-RecommendationEngine</title>
     <script type="text/javascript" src="/static/scripts/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/static/scripts/dashboard.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <link rel = "stylesheet"
    type = "text/css"
    href = "/static/css/dashboardstyle.css" />
 </head>
 <body>
-<div id="headerview">
-<img src="/static/images/nlp-icon.jpg" class="circular-img">
- <input type="text" id="searchtxt" placeholder={{searchtxt}}>
-    <button id="searchbtn">Search</button>
+<div id="loaderDiv" class="defaultloaderDiv">
+<div id="headerview" class="card-panel teal darken-1;card-panel hoverable;sizecheck;col s12">
+<div class="row">
+  <div class="input-field col s12">
+ <input type="text" list="questionsTxt" width="auto" name="searchtxt" class="validate white-text" placeholder="What Can I do For You?" >
+    <button id="searchbtn" class="waves-effect waves-light btn-large">Search</button>
 </div>
-<div id="resultview"></div>
-<div></div>
+  </div>
+</div>
+    <div class="row">
+<div id="resultview" class="container">
 
+</div>
+</div>
+</div>
+<div class="tap-target" data-activates="menu">
+    <div class="tap-target-content">
+      <h5>Hi I am Anoop</h5>
+      <p>I am here to assist you in the meet-up community</p>
+    </div>
+  </div>
+<div class="fixed-action-btn">
+    <a id="menu" class="waves-effect waves-light btn btn-floating btn-large teal" ><i class="material-icons">menu</i></a>
+  </div>
 </body>
 </html>

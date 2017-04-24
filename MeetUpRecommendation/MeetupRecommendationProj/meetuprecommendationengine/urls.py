@@ -1,6 +1,8 @@
 from django.conf.urls import url
-from meetuprecommendationengine.views import loadpage,callcategories
+from meetuprecommendationengine.views import loadpage,loadDefaultData,sendQueryOnSearchSelect
 urlpatterns = [
     url(r'^main/$', loadpage,name="dashboard"),
-    url(r'^getcategories/$', callcategories, name='callcategories'),
+    url(r'^loadDefaultQuestions/$', loadDefaultData, name='loaddefaultdata'),
+    url(r'^onSelectOfList/$', sendQueryOnSearchSelect, name='queryonselect'),
+
 ]
