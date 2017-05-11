@@ -1,0 +1,57 @@
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #000000 !important;
+}
+.extra-margin{
+margin-top:100px
+
+}
+.card-size{
+    max-width: 20% !important;
+    margin-right:5px !important;
+}
+.dropdown-select{
+    background:#b2dfdb !important;
+}
+.defaultloader{
+    display: inline  !important;
+
+}
+.prav-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background: url("/static/images/Preloader.gif") center no-repeat;
+}
+
+
+.style_prav_card
+{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+
+}
+.style_prav_card:hover
+{
+    box-shadow: 0px 0px 100px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2);
+}

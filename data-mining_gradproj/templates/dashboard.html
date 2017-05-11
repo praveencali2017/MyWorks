@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Page</title>
+
+</head>
+<body background="/static/images/movies_header_content.jpg" >
+ <div class="navbar-fixed">
+ <nav class="nav-extended black">
+    <div class="nav-wrapper row">
+      <a href="#" class="brand-logo black">Movie Recommendation</a>
+        <div id="users-list" class="right hide-on-med-and-down input-field col s6">
+
+      </div>
+
+    </div>
+    <div class="nav-content row">
+        <ul id="dropdown-cluster" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li><a href="#!">three</a></li>
+  </ul>
+  <a class="btn dropdown-button" href="#!" data-activates="dropdown-cluster">User Cluster<i class="mdi-navigation-arrow-drop-down right"></i></a>
+      <ul class="tabs tabs-transparent" >
+        <li class="tab col s6"><a class="active" href="#movies-rated">Movies Reviewed by You</a></li>
+        <li class="tab col s6"><a href="#movies-recommended">Recommended Movies</a></li>
+      </ul>
+    </div>
+  </nav>
+ </div>
+ <div id="preloaderDiv" class="defaultloader">
+<div id="movies-rated" class="col s12 container extra-margin"></div>
+<div id="movies-recommended" class="col s12 container extra-margin"></div>
+ </div>
+<script type="text/javascript" src="/static/scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/static/scripts/dashboard.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/dashboard.css">
+    <script type="text/javascript" src="/static/scripts/materialize.min.js"></script>
+    <script>
+    var usersId= JSON.parse({{userIDs|tojson|safe}})
+      <!--loadMovies(movies)-->
+      loadUsersId(usersId)
+     $('select').material_select();
+    </script>
+
+</body>
+</html>
